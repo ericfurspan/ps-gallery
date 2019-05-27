@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-import spinner from '../../spinner.svg';
 
 class Image extends PureComponent {
   constructor(props) {
@@ -25,7 +24,6 @@ class Image extends PureComponent {
 
   render() {
     const { image } = this.props;
-
     return (
       <div className="image-wrapper">
         <div className="intro-text">
@@ -33,10 +31,10 @@ class Image extends PureComponent {
           <p>{image.DATE}</p>
         </div>
         <img
-          src={this.state.intersected ? image.IMAGE : spinner}
+          src={this.state.intersected ? image.IMAGE : ''}
           alt={image.DESCRIPTION || ''}
           ref={elem => (this.imgTag = elem)}
-          style={this.state.intersected ? {width: '100%'} : {width: '50%'}}
+          className='base-image'
         />
         <p>{image.DESCRIPTION}</p>
       </div>

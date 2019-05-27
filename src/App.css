@@ -1,5 +1,4 @@
 html {
-  background-color: #FAFAFA;
 }
 
 .App {
@@ -24,21 +23,21 @@ html {
 .image-wrapper {
   height: 43vh;
   overflow: overlay;
-  border: 1px solid #DEEBFE;
-  background-color: #FFFFFF;
+  border: 1px solid hsl(0,0%,80%);
+  background-color: #FAFAFA;
+  font-weight: 600;
 }
 
-.Base-image {
-  width: 100%;
-}
-
-.Loading-image {
-  width: 50%;
+.base-image {
+  width: 100%
 }
 
 .intro-text {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-style: italic;
 }
 
 .select-dialog {
