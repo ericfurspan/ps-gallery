@@ -1,0 +1,1 @@
+export const RETURN_IMAGES = 'RETURN_IMAGES';
