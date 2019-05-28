@@ -8,6 +8,7 @@ class Image extends PureComponent {
   }
 
   componentDidMount() {
+    // Observe the elements in the view and determine if they intersect
     this.observer = new IntersectionObserver(entries => {
       const image = entries[0];
       if (image.isIntersecting) {
@@ -23,20 +24,34 @@ class Image extends PureComponent {
   }
 
   render() {
-    const { image } = this.props;
+    const { image, openLightbox, index } = this.props;
+
+    // Declare the properties of image box
+    let img, tag, date, description;
+    // Define the values of image box if the element is intersected ("in view")
+    if(this.state.intersected) {
+      img = <img
+        src={image.IMAGE}
+        alt={image.DESCRIPTION || ''}
+        className='base-image'
+        onClick={() => openLightbox(index)}
+      />
+      tag = <p>{image.TAG}</p>
+      date = <p>{image.DATE}</p>
+      description = <p>{image.DESCRIPTION}</p>
+    }
+    // Return the image box
     return (
-      <div className="image-wrapper">
+      <div
+        ref={elem => (this.imgTag = elem)}
+        className="image-wrapper"
+      >
         <div className="intro-text">
-          <p>{image.TAG}</p>
-          <p>{image.DATE}</p>
+          {tag}
+          {date}
         </div>
-        <img
-          src={this.state.intersected ? image.IMAGE : ''}
-          alt={image.DESCRIPTION || ''}
-          ref={elem => (this.imgTag = elem)}
-          className='base-image'
-        />
-        <p>{image.DESCRIPTION}</p>
+        {img}
+        {description}
       </div>
     );
   }

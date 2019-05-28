@@ -10,7 +10,9 @@ https://ps-gallery.netlify.com/
 1. Clone the repository\
 `git clone https://github.com/Quanda/ps-gallery.git`
 
-2. Install dependencies\
+2. Move into the project directory\
+`cd ps-gallery`
+3. Install dependencies\
 `yarn install`
 
 #### Running a build
