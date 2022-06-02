@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/ps-gallery/static/css/main.243eeb4a.chunk.css",
+    "main.js": "/ps-gallery/static/js/main.6be8b712.chunk.js",
+    "main.js.map": "/ps-gallery/static/js/main.6be8b712.chunk.js.map",
+    "runtime~main.js": "/ps-gallery/static/js/runtime~main.3ebd0c03.js",
+    "runtime~main.js.map": "/ps-gallery/static/js/runtime~main.3ebd0c03.js.map",
+    "static/css/2.9522b9fe.chunk.css": "/ps-gallery/static/css/2.9522b9fe.chunk.css",
+    "static/js/2.9eefc85e.chunk.js": "/ps-gallery/static/js/2.9eefc85e.chunk.js",
+    "static/js/2.9eefc85e.chunk.js.map": "/ps-gallery/static/js/2.9eefc85e.chunk.js.map",
+    "index.html": "/ps-gallery/index.html",
+    "precache-manifest.c07cedf29d8fd88c0c60ced30f1d4623.js": "/ps-gallery/precache-manifest.c07cedf29d8fd88c0c60ced30f1d4623.js",
+    "service-worker.js": "/ps-gallery/service-worker.js",
+    "static/css/2.9522b9fe.chunk.css.map": "/ps-gallery/static/css/2.9522b9fe.chunk.css.map",
+    "static/css/main.243eeb4a.chunk.css.map": "/ps-gallery/static/css/main.243eeb4a.chunk.css.map"
+  }
+}
